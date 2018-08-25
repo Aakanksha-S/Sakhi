@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body style="background-color: #999999;">
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('static/images/bg-01.jpg');"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<span class="login100-form-title p-b-59">
+					Sign Up
+				</span>
+				<form method='POST' action="{{ url_for('getInfo') }}" class="login100-form validate-form">
+					<label>Username</label>
+					<input type="text" name="username" class="form-control" required="" value=""placeholder="Enter Your Weight in Kg">
+
+					<label>Email ID</label>
+					<input class="input100" type="text" name="email" placeholder="Email addess...">
+
+					<label>Password</label>
+				  <input type="password" name="password" class="form-control" required="" value=""placeholder="Enter Your Weight in Kg">
+
+
+          <label>Month of Pregnancy</label>
+          <select class="form-control select2"  name="month">
+          	<option>Select</option>
+          	<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+          	<option>5</option>
+          	<option>6</option>
+          	<option>7</option>
+           	<option>8</option>
+            <option>9</option>
+
+          </select>
+<br><br>
+           <label>Weight</label>
+           <input type="text" name="weight" class="form-control" required="" value=""placeholder="Enter Your Weight in Kg">
+
+<br><br>
+           <label>Height</label>
+           <input type="text" name="height" class="form-control" required="" value=""placeholder="Enter Your Height in cms">
+
+<br><br>
+
+					 <label>Waist Size</label>
+           <input type="text" name="waist_size" class="form-control" required="" value=""placeholder="Enter Your Waist Size in inches">
+
+<br><br>
+           <label>Bust Size</label>
+           <input type="text" name="bust_size" class="form-control" required="" value=""placeholder="Enter Your Bust Size in inches">
+
+<br><br>
+            <div class="modal-footer">
+              <input type="hidden" name="isEmpty" value="">
+              <button type="input" name="submit" value="newAccount" class="btn btn-success btn-icon"><i class="fa fa-check"></i> Save My Details</button>
+            </div>
+          </form>
+			</div>
+
+
+	<script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="static/vendor/animsition/js/animsition.min.js"></script>
+	<script src="static/static/vendor/bootstrap/js/popper.js"></script>
+	<script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="static/vendor/select2/select2.min.js"></script>
+	<script src="static/static/vendor/daterangepicker/moment.min.js"></script>
+	<script src="static/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="static/vendor/countdowntime/countdowntime.js"></script>
+	<script src="static/js/main.js"></script>
+
+</body>
+</html>

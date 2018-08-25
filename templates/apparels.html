@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sakhi</title>
+    <link href="static/cssNfonts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/cssNfonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/cssNfonts/css/prettyPhoto.css" rel="stylesheet">
+    <link href="static/cssNfonts/css/price-range.css" rel="stylesheet">
+    <link href="static/cssNfonts/css/animate.css" rel="stylesheet">
+	<link href="static/cssNfonts/css/main.css" rel="stylesheet">
+	<link href="static/cssNfonts/css/responsive.css" rel="stylesheet">
+  <link href="static/css/cart.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+ -->
+</head><!--/head-->
+<style>
+body {
+
+   background-image: url("static/images/balloons.jpg");
+   height : 30%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#flipkart-navbar {
+   background-color: #2874f0;
+   color: #FFFFFF;
+}
+figure {
+  position: relative;
+  width: calc(30% - 1rem);
+  overflow: hidden;
+  max-width: max-content;
+  float: left;
+
+  img {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+</style>
+</head><!--/head-->
+
+<body>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div id="flipkart-navbar">
+    <div class="container">
+    <br>
+        <div class="row row2">
+            <div class="col-sm-2">
+
+                <h1 style="margin:0px;"><span class="largenav"><img src="static/images/fkNew.png" height="30px"></span></h1>
+            </div>
+            <div class="flipkart-navbar-search smallsearch col-sm-7 col-xs-11">
+                <div class="row">
+                    <input class="flipkart-navbar-input col-xs-10" type="" placeholder="Search for Products, Brands and more" name="">
+                    <button class="flipkart-navbar-button col-xs-1">
+                        <svg width="15px" height="15px">
+                            <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="cart largenav col-sm-1">
+                <a class="cart-button">
+                    <svg class="cart-svg " width="16 " height="16 " viewBox="0 0 16 16 ">
+                        <path d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86 " fill="#fff "></path>
+                    </svg> Cart
+                    <span class="item-number ">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+        <span class="sidenav-heading">Home</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="#">Link</a>
+
+</div>
+
+<br>
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1><span>CAN'T KEEP CALM</span> I'm going to be a mommy </h1>
+								</div>
+								<div class="col-sm-6">
+									<img src="static/images/banner1.jpeg" class="girl img-responsive" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+                                    <h1><span>CONGRATULATIONS!</span> On your new bundle of joy </h1>
+									<p></p>
+
+								</div>
+								<div class="col-sm-6">
+									<img src="static/images/banner2.jpeg" class="girl img-responsive" alt="" />
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="col-sm-6">
+                                    <h1><span>SUPER </span> MOM!</h1>
+								</div>
+								<div class="col-sm-6">
+									<img src="static/images/banner2.jpeg" class="girl img-responsive" alt="" />
+								</div>
+							</div>
+
+						</div>
+
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+
+  <section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Category</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('Nutrition') }}">Nutrition</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('Books') }}">Books</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('PersonalCare') }}">Personal Care</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('medAssistance') }}">Medical Assitance</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('apparels') }}">Clothing</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('Bags') }}">Bags</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="{{ url_for('footwear') }}">Footwear</a></h4>
+								</div>
+							</div>
+						</div><!--/category-products-->
+
+
+						<div class="shipping text-center"><!--shipping-->
+							<img src="static/images/home/shipping.jpg" alt="" />
+						</div><!--/shipping-->
+
+					</div>
+				</div>
+
+				<div class="col-sm-9 padding-right">
+
+
+              {% for i in row %}
+              <figure class="randomize">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+										<img src= "{{i[1]}} "alt="" />
+											<i><p style="font-family:verdana;"><h2>Rs {{i[2]}}</h2></p></i>
+											</div>
+										<div class="product-overlay">
+											<div class="overlay-content">
+												<p></p>
+												<a href="{{url_for('cart',prodid = [i[6]],tbname = "Apparels")}}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+										</div>
+								</div>
+
+							</div>
+</figure>
+
+           {% endfor %}
+
+ 						</div>
+          </div>
+        </div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="../static/js/jquery.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<script src="../static/js/jquery.scrollUp.min.js"></script>
+	<script src="../static/js/price-range.js"></script>
+    <script src="../static/js/jquery.prettyPhoto.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
